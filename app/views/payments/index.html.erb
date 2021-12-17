@@ -1,15 +1,12 @@
 <div class="main">
-  <%# if user_signed_in? %>
-    <div class="balance">
-      現在高
-    </div>
+  <% if user_signed_in? %>
     <div class="input">
       入力フォーム
     </div>
     <div class="payments">
       履歴
     </div>
-  <%# end %>
+  <% end %>
 </div>
 <div class="side_bar">
   サイドバー
