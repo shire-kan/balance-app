@@ -3,7 +3,6 @@ class CreatePayments < ActiveRecord::Migration[6.0]
     create_table :payments do |t|
       t.integer         :price,         null: false
       t.integer         :category_id
-      t.integer         :type_id,       null: false
       t.string          :memo
       t.references      :user,       null: false
       t.timestamps
