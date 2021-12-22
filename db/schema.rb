@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 2021_12_18_002309) do
     t.integer "category_id"
     t.integer "type_id", null: false
     t.string "memo"
-    t.bigint "user_id_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id_id"], name: "index_payments_on_user_id_id"
+    t.index ["user_id"], name: "index_payments_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

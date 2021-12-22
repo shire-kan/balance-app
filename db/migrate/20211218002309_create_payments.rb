@@ -5,7 +5,7 @@ class CreatePayments < ActiveRecord::Migration[6.0]
       t.integer         :category_id
       t.integer         :type_id,       null: false
       t.string          :memo
-      t.references       :user_id,       null: false
+      t.references      :user,       null: false
       t.timestamps
     end
   end
