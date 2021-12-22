@@ -1,3 +1,38 @@
-// Place all the styles related to the payments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.side_bar {
+  background-color: #567fa3;
+  width: 15vw;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history {
+  width: 85vw;
+  height: 100vh;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-price {
+  margin-right: 10px;
+}
+
+.form-submit {
+  background-color: white;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
