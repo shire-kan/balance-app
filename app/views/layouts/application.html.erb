@@ -17,7 +17,10 @@
             <%= link_to image_tag("wallet.jpeg", class: :logo), root_path %>
             <% if user_signed_in? %>
               <div class="balance">
-                <%= "¥ #{Payment.all.sum(:price)}" %>
+                <%= "収入   ¥ #{Payment.all.sum(:price)}" %>
+              </div>
+              <div class="balance">
+                <%= "支出   ¥ #{Expense.all.sum(:price)}" %>
               </div>
             <% end %>
           </div>
