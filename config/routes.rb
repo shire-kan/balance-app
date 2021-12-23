@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   resources :payments, only: [:new, :create]
   root to: "payments#index"
+
+  resources :expenses, only: [:new, :create]
 end
