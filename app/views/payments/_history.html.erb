@@ -1,0 +1,23 @@
+<%= form_with model: @payment, class: 'form', local: true do |f| %>
+  <div class="field">
+    <%= f.text_field :price, class: 'form-price', placeholder: '収入' %>
+    <div class="field_submit">
+      <%= f.submit '送信', class: 'form-submit' %>
+    </div>
+  </div>
+<% end %>
+<%= form_with model: @expense, class: 'form', local: true do |f| %>
+  <div class="field">
+    <%= f.text_field :price, class: 'form-price', placeholder: '支出' %>
+    <div class="field_submit">
+      <%= f.submit '送信', class: 'form-submit' %>
+    </div>
+  </div>
+<% end %>
+
+
+<% @payments.each do |payment| %>
+  <div class="field">
+    <%= "¥ #{payment.price}" %>
+  </div>
+<% end %>
